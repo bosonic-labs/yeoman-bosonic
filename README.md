@@ -1,0 +1,2 @@
+yeoman-bosonic
+==============
