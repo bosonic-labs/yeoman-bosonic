@@ -25,12 +25,17 @@ module.exports = function(grunt) {
     watch: {
       source: {
         files: ['src/*.html'],
-        tasks: ['clean', 'bosonic']
+        tasks: ['clean', 'bosonic', 'copy:dist']
       }
     },
 
     copy: {
-      demo: {
+      lib: {
+        files: [
+          { src: ['node_modules/bosonic/dist/*.js'], dest: 'demo/js/', filter: 'isFile', expand: true, flatten: true }
+        ]
+      },
+      dist: {
         files: [
           { src: ['node_modules/bosonic/dist/*.js'], dest: 'demo/js/', filter: 'isFile', expand: true, flatten: true },
           { src: ['dist/*.js'], dest: 'demo/js/', filter: 'isFile', expand: true, flatten: true },
