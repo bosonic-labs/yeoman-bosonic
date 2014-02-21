@@ -15,6 +15,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
         'node_modules/bosonic/dist/*.js',
+        'node_modules/bosonic-test-tools/src/*.js',
         'dist/*.js',
         'test/**/*.js'
     ],

@@ -41,13 +41,11 @@ var BosonicGenerator = yeoman.generators.Base.extend({
     this.mkdir('src');
     this.mkdir('demo');
     this.mkdir('test');
-    this.mkdir('test/support');
 
     this.template('_package.json', 'package.json');
     this.template('_Gruntfile.js', 'Gruntfile.js');
     this.copy('karma.conf.js', 'karma.conf.js');
 
-    this.copy('defer-karma-start.js', 'test/support/defer-karma-start.js');
     this.template('_test.js', 'test/'+this.elementName+'.js');
 
     this.template('_component.html', 'src/'+this.elementName+'.html');
@@ -55,7 +53,7 @@ var BosonicGenerator = yeoman.generators.Base.extend({
   },
 
   projectfiles: function () {
-    this.copy('jshintrc', '.jshintrc');
+    //this.copy('jshintrc', '.jshintrc');
   }
 });
 
