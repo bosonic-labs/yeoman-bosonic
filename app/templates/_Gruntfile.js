@@ -44,8 +44,7 @@ module.exports = function(grunt) {
         options: {
           port: 8020,
           base: './demo',
-          hostname: '*',
-          keepalive: true
+          hostname: '*'
         }
       }
     }
@@ -61,7 +60,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['dist', 'watch']);
   grunt.registerTask('test', ['dist', 'karma']);
-  grunt.registerTask('demo', ['dist', 'copy', 'connect']);
+  grunt.registerTask('demo', ['dist', 'copy', 'connect', 'watch']);
   grunt.registerTask('dist', ['clean', 'bosonic']);
 
 };
