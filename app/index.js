@@ -53,7 +53,7 @@ var BosonicGenerator = yeoman.generators.Base.extend({
   },
 
   projectfiles: function () {
-    //this.copy('jshintrc', '.jshintrc');
+    this.copy('gitignore', '.gitignore');
   }
 });
 
