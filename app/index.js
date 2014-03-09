@@ -28,6 +28,7 @@ var BosonicGenerator = yeoman.generators.Base.extend({
     var prompts = [{
       name: 'elementName',
       message: 'What do you want to call your new element?',
+      default: path.basename(this.env.cwd)
     }];
 
     this.prompt(prompts, function (props) {
