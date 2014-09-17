@@ -39,6 +39,7 @@ module.exports = function(grunt) {
         files: [
           { src: ['dist/*.js'], dest: 'demo/js/', filter: 'isFile', expand: true, flatten: true },
           { src: ['dist/*.css'], dest: 'demo/css/', filter: 'isFile', expand: true, flatten: true }
+          { src: ['src/*.html'], dest: 'demo/component/', filter: 'isFile', expand: true, flatten: true }
         ]
       }
     },
