@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "bosonic-test-tools": "*",
-    "grunt-bosonic": "0.4.0"
+    "bosonic-test-tools": "~0.2.5",
+    "grunt-bosonic": "~0.4.0"
   },
   "dependencies": {
-    "bosonic": "*"
+    "bosonic": "~0.4.0"
   }
 }
