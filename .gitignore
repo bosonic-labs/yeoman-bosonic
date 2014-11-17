@@ -1,1 +1,6 @@
+# Dependencies
 node_modules/*
+
+# Editors config folders
+.idea
+.DS_Store
