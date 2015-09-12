@@ -1,7 +1,7 @@
 {
   "name": "generator-bosonic",
-  "version": "0.2.1",
-  "description": "Yeoman generator",
+  "version": "0.2.2",
+  "description": "Deprecated.",
   "license": "MIT",
   "main": "app/index.js",
   "repository": {
